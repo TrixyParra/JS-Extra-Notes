@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model (DOM)</title>
+    <script defer src="js/main.js"></script> 
+    <link rel="stylesheet" href="css/style.css"> 
+
+</head>
+<body>
+    <h1>Document Object Model (DOM)</h1>
+    <ul> 
+        <li>Created by the Browser -- when HTML document loads inside it
+        </li>
+
+        <li>'document' Object -- contains many properties and methods to interact with the document like add/remove content
+        </li>
+
+        <li>Console > type: document > press: Enter > shows: #document  -- visual representation of the html document
+        </li>
+
+        <li>>> the html document is modeled by the document object which is created by the browser
+        </li>
+
+        <li>inside the JS, the code gives us access to that document object and its used to interact with HTML pages using the different properties and methods
+        </li>
+
+        <li>DOM also describes how the document looks in a visual way too
+        </li>
+
+        <li>DOM sees HTML page as a heirarchical tree of nodes -- each element (html (root node), head, title (text node), body, h1 (text node), div, p (text node)) is considered a node in the DOM
+        </li>
+
+        <li>DOM is used to reach into tree of nodes and we can get a reference to a particular node (ex: h1 node - refernce to that h1 we can use some different methods on that reference to change its content or change its style or remove it or change something else in it)
+        </li>        
+    <ul>
+
+    <hr>
+
+    <h1 id="page-title">The DOM</h1> 
+
+    <div>
+        <p>hello, world</p>
+        <p>lorem ipsum</p>
+        <p class="error">this is an error message</p>
+    </div>
+
+    <div class="error">this is another error</div> 
+
+    <div class="content">
+        <p>this is the content</p> 
+    </div>
+    
+    <!-- HTML Atrributes: href and class -->
+    <a href="https://www.google.com">Link to somewhere cool...</a> 
+
+    <p class="error-two">lorem ipsum</p> 
+
+    <h3 style="color: orange;">The DOM</h3> 
+
+    <!-- class= errors was removed -->
+    <h5>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nam nemo quod quo itaque laboriosam, qui rerum amet veritatis, officia commodi harum earum voluptatem beatae unde nobis cumque deleniti perferendis?
+    </h5> 
+
+    <!-- Challenge --> 
+    <section>lorem error ipsum</section>
+    <section>lorem success ipsum</section>
+    <section>lorem ipsum lorem</section>
+    <section>lorem ipsum success</section>
+    <section>error lorem ipsum</section>
+    <section>lorem ipsum lorem</section>
+    <section>lorem ipsum error</section>
+    <section>success lorem ipsum</section> 
+
+    <h6 class="toggle">The DOM</h6> 
+
+</body>
+</html>
